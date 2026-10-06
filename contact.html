@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prudin Studios | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mini.css">
+    <link rel="icon" href="/assets/HT/logowhitet.svg" type="image/x-icon">
+    <meta name="description"
+        content="We seperate you from the crowd and dirt, while building our next magnum opus. | Website Design | Website Development">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+</head>
+
+<body data-barba="wrapper">
+    <div class="transition-overlay">
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+        <div class="strip"></div>
+    </div>
+    <main data-barba="container" data-barba-namespace="contact">
+
+        <!-- CURSOR -->
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="heroo">
+
+            <div class="hero-contC">
+                <div class="navC">
+                    <div class="logoC">
+                        <a href="index.html">
+
+                            <img src="assets/HT/logowhitet.svg" alt="prudinstudios logo">
+                        </a>
+                    </div>
+                    <div class="menuC">
+                        <a href="index.html">
+                            <img src="/assets/HT/proicons_cancelt.svg" alt="menu" class="menui">
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="heroMainC">
+                    <div class="heroMainWrapC">
+                        <div class="txtcontC ">
+                            <div class="headingC">Better Together!</div>
+                            <div class="subtxtC">Let's create awesome experiences
+                                that makes you or your brand stand out.</div>
+                        </div>
+                        <form action="" class="inputFieldWrap realForm" id="myForm">
+
+                            <div class="input-names">
+                                <input type="text" placeholder="First Name" id="fname" class="inputF" name="_fname">
+                                <input type="text" placeholder="Last Name" id="lname" class="inputF" name="_lname">
+                            </div>
+                            <input type="email" placeholder="Email" id="givenEmail" class="inputF" name="_email">
+                            <input type="number"
+                                oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10);"
+                                placeholder="Phone Number" inputmode="numeric" pattern="[0-9]" maxlength="10" id="pNo"
+                                class="inputF [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                name="_number">
+                            <textarea placeholder="Message" rows="4" id="messageArea" class="inputF"
+                                style="resize: none;" name="_message"></textarea>
+                            <div class="custom-btn" id="custom-btn"
+                                >
+                                <div class="btnTxt">Send</div>
+                                <div class="btnIcon"><img src="/assets/Contact Page/submitsvg.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="whatsapp-main">
+                        <a href="https://wa.me/917678608299" target="_blank" >
+
+                            <div class="wta-txt subtxt">Get Faster Response in WhatsApp !</div>
+                            <div class="wta-img">
+                                <img src="/assets/Contact Page/wta.svg" alt="" srcset="">
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+    <script src="mini.js"></script>
+    <script>
+
+
+
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbw2hDYhec5m7wyBojJ1-UGDjKWoScF3_IF66Klo6UDaAN-mh7trlc8sIDg7AU0xWuPUDw/exec";
+
+        const customBtn = document.getElementById("custom-btn");
+
+        customBtn.addEventListener("click", async function (e) {
+
+            e.preventDefault();
+
+            const form = document.getElementById("myForm");
+
+            const formData = new FormData(form);
+
+            try {
+
+                const response = await fetch(scriptURL, {
+                    method: "POST",
+                    body: formData
+                });
+
+                const result = await response.text();
+
+                console.log(result);
+
+                alert("Message Sent!");
+
+                form.reset();
+
+            } catch (error) {
+
+                console.error(error);
+
+                alert("Error sending message");
+
+            }
+
+        });
+
+        
+    </script>
+
+
+
+</body>
+
+</html>
